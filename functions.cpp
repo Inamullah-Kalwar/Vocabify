@@ -449,9 +449,9 @@ void displayWordsToLearn(const std::vector<WordEntry>& wordList) {
 
 void printInstructions() {
     std::cout <<
-        "====================================\n"
-        "   Welcome to Word Management App\n"
-        "====================================\n"
+        "================================\n"
+        "     Welcome to Vocabify\n"
+        "================================\n"
         BLUE_COLOR 
         "1. Add a new word\n"
         "2. Search for a word\n"
