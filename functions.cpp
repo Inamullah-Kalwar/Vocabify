@@ -106,7 +106,7 @@ void searchWord(const std::vector<WordEntry>& wordList) {
             std::cout << "Definition: " << wordEntry.definition << std::endl;
             std::cout << "Usage: " << wordEntry.usage << std::endl;
             std::cout << "Pronunciation: " << wordEntry.pronunciation << std::endl;
-            std::cout << "Learned: " << (wordEntry.learned ? GREEN_COLOR "Yes" : RESET_COLOR "No") << std::endl;
+            std::cout << "Learned: " << (wordEntry.learned ? GREEN_COLOR "Yes" RESET_COLOR : RESET_COLOR "No") << std::endl;
             found = true;
             break;
         }
@@ -270,7 +270,7 @@ void displayFlashcards(const std::vector<WordEntry>& wordList) {
         std::cout << "Definition: " << wordEntry.definition << std::endl;
         std::cout << "Usage: " << wordEntry.usage << std::endl;
         std::cout << "Pronunciation: " << wordEntry.pronunciation << std::endl;
-        std::cout << "Learned: " << (wordEntry.learned ? GREEN_COLOR "Yes" : RESET_COLOR "No") << std::endl;
+        std::cout << "Learned: " << (wordEntry.learned ? GREEN_COLOR "Yes" RESET_COLOR : RESET_COLOR "No") << std::endl;
         std::cout << "Press Enter to continue to the next word...";
         getch();
         std::cout << std::endl;
